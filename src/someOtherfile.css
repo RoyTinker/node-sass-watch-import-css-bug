@@ -1,5 +1,5 @@
 /* These 2 import rules are causing a node-sass error, but only when using --watch */
 /* ... but node-sass shouldn't even be reading this file! */
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://some-site.com/fonts/1);
 @import url(something.css);
