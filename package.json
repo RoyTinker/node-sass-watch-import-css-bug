@@ -1,7 +1,7 @@
 {
     "name": "node-sass-watch-import-css-bug",
     "description": "repro case for node-sass bug",
-    "license": "unlicense",
+    "license": "",
     "readme": "README.md",
     "repository": {
         "type": "git",
@@ -14,10 +14,11 @@
     },
     "private": true,
     "devDependencies": {
-        "node-sass": "^4.7.2"
+        "node-sass": "^4.7.2",
+        "concurrently": "^3.5.1"
     },
     "scripts": {
-        "sass": "./node_modules/.bin/node-sass ./src/ -o ./src/ -r --source-map true",
-        "watch:sass": "./node_modules/.bin/node-sass ./src/ -o ./src/ -r --source-map true --watch"
+        "sass": "./node_modules/.bin/node-sass ./src -r -o ./src --source-map true",
+        "watch:sass": "./node_modules/.bin/node-sass --watch ./src -r -o ./src --source-map true"
     }
 }
