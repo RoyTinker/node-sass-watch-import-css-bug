@@ -1,5 +1,5 @@
 # node-sass-watch-import-css-bug
-Reduced test case for node-sass bug
+Reduced test case for node-sass bug: https://github.com/sass/node-sass/issues/2185
 
 1. Clone this repo
 2. Run `npm install` from the root of this repo
