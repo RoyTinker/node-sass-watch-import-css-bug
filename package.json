@@ -1,0 +1,23 @@
+{
+    "name": "node-sass-watch-import-css-bug",
+    "description": "repro case for node-sass bug",
+    "license": "unlicense",
+    "readme": "README.md",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:RoyTinker/node-sass-watch-import-css-bug.git"
+    },
+    "version": "0.0.1",
+    "author": {
+        "name": "Roy Tinker",
+        "email": "roytinker@gmail.com"
+    },
+    "private": true,
+    "devDependencies": {
+        "node-sass": "^4.7.2"
+    },
+    "scripts": {
+        "sass": "./node_modules/.bin/node-sass ./src/ -o ./src/ -r --source-map true",
+        "watch:sass": "./node_modules/.bin/node-sass ./src/ -o ./src/ -r --source-map true --watch"
+    }
+}
