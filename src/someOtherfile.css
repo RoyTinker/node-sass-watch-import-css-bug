@@ -2,5 +2,4 @@
 /* ... but node-sass shouldn't even be reading this file! */
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
-
-@import url(something.css) screen and (color) and (max-width: 600px);
+@import url(something.css);
